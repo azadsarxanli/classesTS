@@ -13,3 +13,21 @@ class Home {
 }
 let home = new Home(3, 6, 2);
 home.eatMeal();
+
+class Person {
+  save() {
+    console.log("persone has been saved");
+  }
+}
+class Customer extends Person {
+  sell() {
+    console.log("Customer sold something");
+  }
+}
+class Employee extends Person {
+  paySalary() {
+    console.log("You payed salary ");
+  }
+}
+let customer = new Customer();
+customer.sell();
